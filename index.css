@@ -41,6 +41,7 @@ h2 {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  background-color: rgb(249, 255, 249);
 }
 
 h3 {
