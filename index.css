@@ -78,11 +78,12 @@ h3 {
   background-color: rgb(140, 215, 193);
 }
 
-/* .bookmark {
-  position: absolute;
-  visibility: hidden;
+.bookmark {
+  border-style: none;
+  background-color: transparent;
+  align-self: flex-end;
+  margin-top: -30px;
 }
- */
 
 /* NAVBAR */
 
