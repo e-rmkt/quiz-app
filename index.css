@@ -2,9 +2,15 @@
   box-sizing: border-box;
 }
 
+/* BACKDROP */
+
 body {
   margin: 0;
+  background-image: url(./assets/jungle.jpg);
+  background-repeat: no-repeat;
 }
+
+/* HEADER  */
 
 header {
   display: flex;
@@ -26,3 +32,54 @@ h2 {
   font-weight: 100;
   margin-top: 5px;
 }
+
+/* QUESTION CARD */
+
+.question-card {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 255, 249);
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.answer-button {
+  width: 200px;
+  padding: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  align-self: center;
+  color: aliceblue;
+  background-color: darkslategray;
+  border-style: none;
+}
+
+.categories {
+  margin-top: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.tags {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(140, 215, 193);
+}
+
+/* .bookmark {
+  position: absolute;
+  visibility: hidden;
+}
+ */
