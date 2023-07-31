@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+/* BACKDROP */
+
 body {
   margin: 0;
 }
+
+/* HEADER  */
 
 header {
   display: flex;
@@ -26,3 +30,47 @@ h2 {
   font-weight: 100;
   margin-top: 5px;
 }
+
+/* QUESTION CARD */
+
+.question-card {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.answer-button {
+  width: 250px;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  align-self: center;
+}
+
+.categories {
+  margin-top: 30px;
+}
+
+.tags {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+/* .bookmark {
+  position: absolute;
+  visibility: hidden;
+}
+ */
