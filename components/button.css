@@ -1,0 +1,14 @@
+/* BUTTON */
+
+.answer-button {
+  width: 200px;
+  padding: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  align-self: center;
+  color: aliceblue;
+  background-color: darkslategray;
+  border-style: none;
+}
