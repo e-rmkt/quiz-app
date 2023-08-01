@@ -4,8 +4,8 @@ header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background-color: darkslategrey;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--contrasting-color);
 }
 
 h1 {

@@ -8,7 +8,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   align-self: center;
-  color: aliceblue;
-  background-color: darkslategray;
+  color: var(--contrasting-color);
+  background-color: var(--primary-color);
   border-style: none;
 }

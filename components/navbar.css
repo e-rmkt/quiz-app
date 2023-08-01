@@ -6,5 +6,5 @@
   display: flex;
   justify-content: space-around;
   padding: 10px 30px;
-  background-color: darkslategray;
+  background-color: var(--primary-color);
 }
