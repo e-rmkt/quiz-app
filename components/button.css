@@ -1,0 +1,14 @@
+/* BUTTON */
+
+.answer-button {
+  width: 200px;
+  padding: 15px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  align-self: center;
+  color: var(--contrasting-color);
+  background-color: var(--primary-color);
+  border-style: none;
+}

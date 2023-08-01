@@ -1,0 +1,39 @@
+/* QUESTION CARD */
+
+.question-card {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--contrasting-color);
+}
+
+h3 {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 50px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.categories {
+  margin-top: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.tags {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--secondary-color);
+}
+
+.bookmark {
+  border-style: none;
+  background-color: transparent;
+  align-self: flex-end;
+  margin-top: -30px;
+}
