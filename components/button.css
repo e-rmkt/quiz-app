@@ -3,7 +3,7 @@
 .answer-button {
   width: 200px;
   padding: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
