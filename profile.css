@@ -1,7 +1,5 @@
 @import url(./global.css);
 @import url(./components/header.css);
-@import url(./components/question-card.css);
-@import url(./components/button.css);
 @import url(./components/navbar.css);
 
 /* BACKDROP */
@@ -12,4 +10,50 @@ body {
 
 main {
   margin-bottom: 100px;
+  padding: 50px 60px;
 }
+
+/* USER ID */
+
+.user-id {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-id img {
+  border-radius: 100%;
+}
+
+h4 {
+  font-family: var(--main-font);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* ABOUT ME */
+
+.about-me {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5px;
+}
+
+h5 {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+.about-me p {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+
+/* PERSONAL COUNTER */
