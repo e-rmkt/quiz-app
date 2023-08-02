@@ -11,3 +11,7 @@ body {
   background-image: url(./assets/jungle.jpg);
   background-repeat: repeat;
 }
+
+main {
+  margin-bottom: 100px;
+}
