@@ -6,11 +6,15 @@
 
 body {
   margin: 0;
+  background-image: url(./assets/jungle.jpg);
+  background-repeat: repeat;
 }
 
 main {
-  margin-bottom: 100px;
-  padding: 50px 60px;
+  background-color: var(--contrasting-color);
+  margin: 20px;
+  padding: 40px 60px;
+  border-radius: 3px;
 }
 
 /* USER ID */
@@ -19,7 +23,6 @@ main {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .user-id img {
@@ -30,6 +33,7 @@ h4 {
   font-family: var(--main-font);
   font-size: 30px;
   font-weight: 400;
+  margin-left: 50px;
 }
 
 /* ABOUT ME */
@@ -57,3 +61,40 @@ h5 {
 }
 
 /* PERSONAL COUNTER */
+
+.personal-counter {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 20px;
+}
+
+.personal-counter button {
+  background-color: var(--secondary-color);
+  border-style: none;
+  border-radius: 15px;
+  color: var(--contrasting-color);
+  width: 120px;
+  height: 60px;
+  font-size: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* SETTINGS */
+
+h6 {
+  font-size: 20px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  margin: 0;
+}
+
+.switch {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: var(--main-font);
+  justify-content: space-between;
+}
