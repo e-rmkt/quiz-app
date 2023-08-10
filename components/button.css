@@ -12,3 +12,20 @@
   background-color: var(--primary-color);
   border-style: none;
 }
+
+.answer-button__answer-box {
+  align-self: center;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  padding-top: 30px;
+  font-family: var(--main-font);
+  font-size: 23px;
+  background-color: var(--tertiary-color);
+  color: var(--contrasting-color);
+}
+
+.answer-button__answer-box span {
+  font-size: 16px;
+  margin-top: 5px;
+}
