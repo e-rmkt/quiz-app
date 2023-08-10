@@ -1,4 +1,4 @@
-// BOOKMARK TOGGLE
+// BOOKMARK TOGGLE ///////////////////////////
 
 const bookmarkButton = document.querySelector(".question-card__bookmark");
 const bookmarkSaved = document.querySelector(
@@ -8,15 +8,19 @@ const bookmarkUnsaved = document.querySelector(
   ".question-card__bookmark-img--unsaved"
 );
 
-const bookmarkSavedStyle = bookmarkSaved.classList;
-const bookmarkUnsavedStyle = bookmarkUnsaved.classList;
+// function to toggle bookmark class hidden
+
+function toggleButton() {
+  bookmarkUnsaved.classList.toggle("hidden");
+  bookmarkSaved.classList.toggle("hidden");
+}
+
+// eventListener for the click event on button
 
 bookmarkButton.addEventListener("click", () => {
-  if (bookmarkSavedStyle.contains("hidden")) {
-    bookmarkUnsavedStyle.add("hidden");
-    bookmarkSavedStyle.remove("hidden");
+  if (bookmarkSaved.classList.contains("hidden")) {
+    toggleButton();
   } else {
-    bookmarkUnsavedStyle.remove("hidden");
-    bookmarkSavedStyle.add("hidden");
+    toggleButton();
   }
 });
