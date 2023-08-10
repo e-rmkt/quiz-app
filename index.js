@@ -24,3 +24,25 @@ bookmarkButton.addEventListener("click", () => {
     toggleButton();
   }
 });
+
+// ANSWER BUTTON TOGGLE ////////////////////////
+
+const answerButton = document.querySelector(".answer-button");
+const answerBox = document.querySelector(".answer-button__answer-box");
+
+// function to toggle answer box class hidden
+
+function toggleAnswer() {
+  answerBox.classList.toggle("hidden");
+}
+
+// eventListener for the click event on button
+
+answerButton.addEventListener("click", () => {
+  toggleAnswer();
+  if (!answerBox.classList.contains("hidden")) {
+    answerButton.textContent = "Hide Answer";
+  } else {
+    answerButton.textContent = "Show Answer";
+  }
+});
