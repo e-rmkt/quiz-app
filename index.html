@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Quiz App</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,10 +15,17 @@
     </header>
     <main>
       <section class="question-card">
-        <button class="bookmark" aria-label="Add bookmark">
+        <button class="question-card__bookmark" aria-label="Add bookmark">
           <img
-            src="./assets/bookmark_green.png"
-            alt="green bookmark icon"
+            class="question-card__bookmark-img--unsaved"
+            src="./assets/boommark-unsaved.png"
+            alt="Click Boomark Icon With A Green Border to add Question to Bookmarks"
+            height="50px"
+          />
+          <img
+            class="question-card__bookmark-img--saved hidden"
+            src="./assets/bookmark-saved.png"
+            alt="Green Bookmark - Question is bookmarked"
             height="50px"
           />
         </button>
@@ -30,7 +38,7 @@
         </aside>
       </section>
 
-      <section class="question-card">
+      <!-- <section class="question-card">
         <button class="bookmark" aria-label="Add bookmark">
           <img
             src="./assets/bookmark_green.png"
@@ -79,7 +87,7 @@
           <button class="tags">#desert</button>
           <button class="tags">#africa</button>
         </aside>
-      </section>
+      </section> -->
     </main>
     <footer class="navbar">
       <a href="#" aria-label="Go to homescreen"
