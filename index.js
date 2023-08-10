@@ -37,7 +37,6 @@ function toggleAnswer() {
 }
 
 // eventListener for the click event on button
-
 answerButton.addEventListener("click", () => {
   toggleAnswer();
   if (!answerBox.classList.contains("hidden")) {
