@@ -6,29 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Quiz App</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="./form.js" type="module"></script>
   </head>
   <body>
     <header>
       <h1>Animal Guessr 🐸</h1>
-      <h2>Bookmarks 📚</h2>
+      <h2>Add Your Question! ⁉️</h2>
     </header>
     <main>
-      <section class="question-card">
-        <button class="bookmark" aria-label="Add bookmark">
-          <img
-            src="./assets/bookmark_green.png"
-            alt="green bookmark icon"
-            height="50px"
-          />
-        </button>
-        <h3>What animal has orange fur and black stripes?</h3>
-        <button class="answer-button">Show Answer</button>
-        <aside class="categories">
-          <button class="tags">#mammal</button>
-          <button class="tags">#cat</button>
-          <button class="tags">#worldwide</button>
-        </aside>
-      </section>
+      <form class="form" data-js="form">
+        <label for="question">Your Question</label>
+        <textarea type="text" name="question" id="question"></textarea>
+
+        <label for="answer">Your Answer</label>
+        <textarea type="text" name="answer" id="answer"></textarea>
+
+        <label for="tag">Tag</label>
+        <input type="text" name="tag" id="tag" />
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer class="navbar">
       <a href="./index.html" aria-label="Go to homescreen"
@@ -37,13 +34,13 @@
           alt="little house icon"
           height="50px"
       /></a>
-      <a href="" aria-label="Go to own bookmarks"
+      <a href="./bookmarks.html" aria-label="Go to own bookmarks"
         ><img
           src="./assets/bookmark.png"
           alt="little bookmark icon"
           height="50px"
       /></a>
-      <a href="./form.html" aria-label="Add Questions"
+      <a href="#" aria-label="Add Questions"
         ><img src="./assets/plus.png" alt="little plus icon" height="50px"
       /></a>
       <a href="./profile.html" aria-label="Go to own profile"
