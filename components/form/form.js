@@ -38,5 +38,4 @@ ${data.answer} <br />
 
   document.body.append(card);
   event.target.reset();
-  console.log(data);
 });
