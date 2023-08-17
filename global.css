@@ -1,3 +1,9 @@
+@import url(./components/header.css);
+@import url(./components/question-card.css);
+@import url(./components/button.css);
+@import url(./components/navbar.css);
+@import url(./components/form.css);
+
 /* GLOBAL STYLING */
 
 * {
@@ -13,4 +19,16 @@
   --font-color: #252525;
   /* FONTS */
   --main-font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* BACKDROP */
+
+body {
+  margin: 0;
+  background-image: url(./assets/jungle.jpg);
+  background-repeat: repeat;
+}
+
+main {
+  margin-bottom: 100px;
 }
