@@ -1,8 +1,9 @@
 @import url(./components/header.css);
 @import url(./components/question-card.css);
-@import url(./components/button.css);
+@import url(./components/button/button.css);
 @import url(./components/navbar.css);
-@import url(./components/form.css);
+@import url(./components/form/form.css);
+@import url(./profile/profile.css);
 
 /* GLOBAL STYLING */
 
