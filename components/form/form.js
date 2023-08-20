@@ -1,6 +1,9 @@
 // QUESTION FORM
 const form = document.querySelector('[data-js="form"]');
 
+const inputElement = document.querySelectorAll(".input-field");
+const amountLeft = document.querySelectorAll(".amountLeft");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -39,3 +42,67 @@ ${data.answer} <br />
   document.body.append(card);
   event.target.reset();
 });
+
+// CHARACTER COUNTER
+
+let charCounter = 0;
+const [inputElementQ, inputElementA] = inputElement;
+const [amountLeftQ, amountLeftA] = amountLeft;
+
+// QUESTION
+const updateAmountLeftQ = (value) => {
+  amountLeftQ.innerText = value;
+};
+
+updateAmountLeftQ(charCounter);
+
+inputElementQ.addEventListener("input", () => {
+  updateAmountLeftQ(charCounter + inputElementQ.value.length);
+  amountLeftQ.innerText >= 100
+    ? (amountLeftQ.style.color = "red")
+    : (amountLeftQ.style.color = "darkslategrey");
+});
+
+// ANSWER
+const updateAmountLeftA = (value) => {
+  amountLeftA.innerText = value;
+};
+
+updateAmountLeftA(charCounter);
+
+inputElementA.addEventListener("input", () => {
+  updateAmountLeftA(charCounter + inputElementA.value.length);
+  amountLeftA.innerText >= 100
+    ? (amountLeftA.style.color = "red")
+    : (amountLeftA.style.color = "darkslategrey");
+});
+
+// console.clear();
+// console.log(inputElement, amountLeft);
+
+// let charCounter = 0;
+
+// // function updateAmountLeft(value) {
+// //   amountLeft.innerText = value;
+// // }
+// // updateAmountLeft(charCounter);
+
+// // inputElement.forEach((elements) => {
+// //   elements.addEventListener("input", () => {
+// //     amountLeft.forEach((element) => {
+// //       element.innerText = 0 + elements.innerText.value.length;
+// //     });
+// //   });
+// // });
+
+// // function updateAmountLeft(amount, input) {
+// //   amount.innerText = input.value.length;
+// // }
+
+// inputElement.forEach((elements) => {
+//   elements.addEventListener("input", () => {
+//     amountLeft.forEach((element) => {
+//       element.innerText = elements.value.length;
+//     });
+//   });
+// });
