@@ -39,3 +39,24 @@ ${data.answer} <br />
   document.body.append(card);
   event.target.reset();
 });
+
+// CHARACTER COUNTER
+
+const inputElement = document.querySelectorAll(".input-field");
+const amountLeft = document.querySelectorAll(".amountLeft");
+
+let charCounter = 0;
+const [inputElementQ, inputElementA] = inputElement;
+const [amountLeftQ, amountLeftA] = amountLeft;
+
+function Counter(input, amount) {
+  input.addEventListener("input", () => {
+    const remainingChars = charCounter + input.value.length;
+    amount.innerText = remainingChars;
+    amount.innerText >= 10
+      ? (amount.style.color = "red")
+      : (amount.style.color = "darkslategrey");
+  });
+}
+Counter(inputElementQ, amountLeftQ);
+Counter(inputElementA, amountLeftA);
